@@ -3466,7 +3466,7 @@
             [
               [
                 86,
-                "怪物",
+                "Monster",
                 -2
               ]
             ],
@@ -9891,7 +9891,7 @@
             [
               [
                 3,
-                "关闭",
+                "Close",
                 32,
                 1,
                 1,
@@ -10471,7 +10471,7 @@
             [
               [
                 3,
-                "关闭",
+                "Close",
                 32,
                 1,
                 1,
@@ -11109,7 +11109,7 @@
             [
               [
                 3,
-                "关闭",
+                "Close",
                 32,
                 1,
                 1,
@@ -11879,7 +11879,7 @@
             [
               [
                 3,
-                "关闭",
+                "Close",
                 32,
                 1,
                 1,
@@ -12023,7 +12023,7 @@
             [
               [
                 3,
-                "关闭",
+                "Close",
                 32,
                 1,
                 1,
@@ -12101,7 +12101,7 @@
             [
               [
                 3,
-                "关闭",
+                "Close",
                 32,
                 1,
                 1,
@@ -12148,7 +12148,7 @@
             [
               [
                 3,
-                "关闭",
+                "Close",
                 32,
                 1,
                 1,
@@ -12565,7 +12565,7 @@
             [
               [
                 3,
-                "关闭",
+                "Close",
                 32,
                 1,
                 1,
@@ -12710,7 +12710,7 @@
             [
               [
                 3,
-                "关闭",
+                "Close",
                 32,
                 1,
                 1,
@@ -12785,7 +12785,7 @@
             [
               [
                 3,
-                "关闭",
+                "Close",
                 32,
                 1,
                 1,
@@ -12872,7 +12872,7 @@
             [
               [
                 3,
-                "点击我可以拖曳位置",
+                "Click and I can drag the location",
                 14,
                 1,
                 1,
@@ -12933,7 +12933,7 @@
             [
               [
                 3,
-                "玩家",
+                "Player",
                 20,
                 1,
                 1,
@@ -13012,7 +13012,7 @@
             [
               [
                 3,
-                "关闭",
+                "Close",
                 32,
                 1,
                 1,
@@ -16150,7 +16150,7 @@
             [
               [
                 3,
-                "如果使用中遇到问题可联系作者：QQ 583051842",
+                "If you encounter problems during use, please contact the author: QQ 583051842",
                 26,
                 1,
                 1,
@@ -16911,7 +16911,7 @@
             [
               [
                 3,
-                "waypoint value",
+                "node value",
                 24,
                 1,
                 1,
@@ -18951,7 +18951,7 @@
             [
               [
                 52,
-                "教程",
+                "Tutorial",
                 1,
                 1,
                 -1222,
@@ -19363,7 +19363,7 @@
           ],
           [
             27,
-            "工具栏",
+            "Toolbar",
             24,
             1,
             2,
@@ -19451,7 +19451,7 @@
           ],
           [
             193,
-            "设置笔刷",
+            "Set brush",
             76,
             222,
             78,
@@ -19620,7 +19620,7 @@
           ],
           [
             7,
-            "删除路点\n(D或右键)",
+            "Delete node\n(D or Right click)",
             24,
             false,
             1,
@@ -19669,7 +19669,7 @@
           ],
           [
             7,
-            "可走路点",
+            "Walkable",
             24,
             false,
             1,
@@ -19689,7 +19689,7 @@
           ],
           [
             194,
-            "编辑路点",
+            "Node Type",
             80,
             225,
             45,
@@ -19806,10 +19806,10 @@
           [
             195,
             [
-              "商人",
-              "任务",
-              "剧情",
-              "特殊"
+              "Merchant",
+              "Task",
+              "Plot",
+              "Special"
             ],
             47,
             231,
@@ -19825,7 +19825,7 @@
           ],
           [
             196,
-            "放置NPC",
+            "place npc",
             85,
             229,
             87,
@@ -19941,10 +19941,10 @@
           [
             197,
             [
-              "小怪",
-              "精英怪",
+              "Little monster",
+              "Elite Monster",
               "Boss",
-              "特殊怪"
+              "Special monster"
             ],
             49,
             234,
@@ -19960,7 +19960,7 @@
           ],
           [
             198,
-            "放置怪物",
+            "Place monster",
             88,
             232,
             90,
@@ -20064,7 +20064,7 @@
           ],
           [
             77,
-            "传送门",
+            "Portal",
             24,
             1,
             1,
@@ -20077,9 +20077,9 @@
           [
             199,
             [
-              "类型1",
-              "类型2",
-              "不可视"
+              "Type 1",
+              "Type 2",
+              "Invisible"
             ],
             51,
             237,
@@ -20094,7 +20094,7 @@
           ],
           [
             200,
-            "放置传送门",
+            "Place Portal",
             91,
             235,
             93,
@@ -20209,7 +20209,7 @@
           ],
           [
             77,
-            "出生点",
+            "Spawn Point",
             24,
             1,
             1,
@@ -20228,7 +20228,7 @@
           ],
           [
             202,
-            "放置出生点",
+            "Place Spawn Point",
             94,
             238,
             96,
@@ -20317,7 +20317,7 @@
             [
               [
                 3,
-                "网格坐标",
+                "Grid ",
                 28,
                 2,
                 1,
@@ -20406,7 +20406,7 @@
             [
               [
                 3,
-                "世界坐标",
+                "World ",
                 28,
                 2,
                 1,
@@ -20495,7 +20495,7 @@
             [
               [
                 3,
-                "像素坐标",
+                "Pixel ",
                 28,
                 2,
                 1,
@@ -20565,7 +20565,7 @@
             [
               [
                 7,
-                "Hide map（U）",
+                "Hide Map（U)",
                 20,
                 false,
                 1,
@@ -20801,7 +20801,7 @@
             [
               [
                 3,
-                "Properties panel",
+                "Properties",
                 24,
                 1,
                 1,
@@ -21240,7 +21240,7 @@
             [
               [
                 7,
-                "Hidden waypoint(I)",
+                "Hide Nodes (I)",
                 20,
                 false,
                 1,
@@ -21295,7 +21295,7 @@
             [
               [
                 7,
-                "Hidden objects(O)",
+                "Hide Objects (O)",
                 20,
                 false,
                 1,
@@ -21350,7 +21350,7 @@
             [
               [
                 7,
-                "Hide grid(P)",
+                "Hide Grid (P)",
                 20,
                 false,
                 1,
@@ -21470,7 +21470,7 @@
             [
               [
                 7,
-                "Set up",
+                "Settings",
                 20,
                 false,
                 1,
@@ -21499,7 +21499,7 @@
             [
               [
                 7,
-                "Run（ctr + enter）",
+                "Run（Ctr + Enter）",
                 20,
                 false,
                 1,
@@ -21528,7 +21528,7 @@
             [
               [
                 7,
-                "Add walkable points(Q)",
+                "Add walkable Node(Q)",
                 20,
                 false,
                 1,
@@ -21557,7 +21557,7 @@
             [
               [
                 7,
-                "Add unwalkable points(W)",
+                "Add unwalkable Node(W)",
                 20,
                 false,
                 1,
@@ -21586,7 +21586,7 @@
             [
               [
                 7,
-                "Add transparent walking waypoints(E)",
+                "Add transparent walking node(E)",
                 20,
                 false,
                 1,
@@ -21615,7 +21615,7 @@
             [
               [
                 7,
-                "Add teleport waypoint(R)",
+                "Add teleport node(R)",
                 20,
                 false,
                 1,
@@ -21644,7 +21644,7 @@
             [
               [
                 7,
-                "Delete waypoint (d or right click)",
+                "Delete node (D or Right click)",
                 20,
                 false,
                 1,
@@ -21673,7 +21673,7 @@
             [
               [
                 7,
-                "Stop placing waypoints（T）",
+                "Stop placing nodes（T）",
                 20,
                 false,
                 1,
@@ -21876,7 +21876,7 @@
             [
               [
                 7,
-                "Waypoint editing mode(N)",
+                "node editing mode(N)",
                 20,
                 false,
                 1,
@@ -21934,7 +21934,7 @@
             [
               [
                 7,
-                "Edit waypoint",
+                "Node Types",
                 20,
                 false,
                 1,
@@ -21990,7 +21990,7 @@
             [
               [
                 7,
-                "Place npc",
+                "NPC",
                 20,
                 false,
                 1,
@@ -22046,7 +22046,7 @@
             [
               [
                 7,
-                "Place monster",
+                "Monsters",
                 20,
                 false,
                 1,
@@ -22102,7 +22102,7 @@
             [
               [
                 7,
-                "Place portal",
+                "Portals",
                 20,
                 false,
                 1,
@@ -22158,7 +22158,7 @@
             [
               [
                 7,
-                "P. Spawn Point",
+                "Spawn Points",
                 20,
                 false,
                 1,
@@ -22462,7 +22462,7 @@
             [
               [
                 3,
-                "map width",
+                "Map width",
                 24,
                 2,
                 1,
@@ -22536,7 +22536,7 @@
             [
               [
                 3,
-                "map height",
+                "Map height",
                 24,
                 2,
                 1,
@@ -22618,7 +22618,7 @@
             [
               [
                 3,
-                "waypoint width",
+                "node Width",
                 24,
                 2,
                 1,
@@ -22702,7 +22702,7 @@
             [
               [
                 3,
-                "High waypoint度",
+                "node Height",
                 24,
                 2,
                 1,
@@ -22830,7 +22830,7 @@
             [
               [
                 70,
-                "45isometric map",
+                "45 Isometric map",
                 24,
                 1,
                 -1323,
@@ -22915,7 +22915,7 @@
             [
               [
                 70,
-                "90Top view map",
+                "90 Top view map",
                 24,
                 1,
                 -1326,
@@ -23000,7 +23000,7 @@
             [
               [
                 70,
-                "vertical hexagon map",
+                "Vertical hexagon map",
                 24,
                 1,
                 -1329,
@@ -23140,7 +23140,7 @@
             [
               [
                 3,
-                "map type",
+                "Map type",
                 24,
                 2,
                 1,
@@ -23213,7 +23213,7 @@
           ],
           [
             70,
-            "Note: The width of a hexagonal waypoint refers to the distance between two opposite corners, and the height refers to the distance between two opposite sides.",
+            "Note: The width of a hexagonal node refers to the distance between two opposite corners, and the height refers to the distance between two opposite sides.",
             24,
             1,
             592,
@@ -23250,7 +23250,7 @@
             [
               [
                 3,
-                "hexagon",
+                "Hexagon",
                 24,
                 2,
                 1,
@@ -24128,7 +24128,7 @@
             [
               [
                 52,
-                "set up",
+                "Settings",
                 1,
                 1,
                 -1357,
@@ -24238,7 +24238,7 @@
             [
               [
                 27,
-                "Waypoint settings",
+                "node settings",
                 24,
                 1,
                 2,
@@ -24270,7 +24270,7 @@
             [
               [
                 7,
-                "reset",
+                "Reset",
                 24,
                 false,
                 1,
@@ -24313,7 +24313,7 @@
             [
               [
                 27,
-                "Unedited waypoint defaults",
+                "Unedited node defaults",
                 24,
                 1,
                 2,
@@ -26004,7 +26004,7 @@
             [
               [
                 7,
-                "取消",
+                "Cancel",
                 24,
                 false,
                 1,
@@ -26047,7 +26047,7 @@
             [
               [
                 7,
-                "应用",
+                "Apply",
                 24,
                 false,
                 1,
@@ -26090,7 +26090,7 @@
             [
               [
                 52,
-                "联系我们",
+                "Contact us",
                 1,
                 1,
                 -1389,
@@ -26116,7 +26116,7 @@
             [
               [
                 27,
-                "策划设计：小唐",
+                "Planning and design: Xiao Tang",
                 28,
                 1,
                 2,
@@ -26160,7 +26160,7 @@
             [
               [
                 27,
-                "开发人员：小唐",
+                "Developer: Xiao Tang",
                 28,
                 1,
                 2,
@@ -26204,7 +26204,7 @@
             [
               [
                 27,
-                "技术支持：小唐",
+                "Technical support: Xiao Tang",
                 28,
                 1,
                 2,
@@ -26292,7 +26292,7 @@
             [
               [
                 27,
-                "需要帮助请QQ联系",
+                "If you need help, please contact us via QQ",
                 28,
                 1,
                 2,
@@ -26374,7 +26374,7 @@
           ],
           [
             52,
-            "框架介绍",
+            "Framework introduction",
             1,
             1,
             761,
@@ -26418,7 +26418,7 @@
           ],
           [
             123,
-            "该前端框架包含以下内容\n1、游戏登录->加载进大厅->初始化地图的完成流程，可直接换皮\n2、代码每个接口和关键的地方都有规范的注释\n3、高效的地图寻路算法，每帧支持3000个角色同时寻路\n4、寻路算法支持正方形，菱形，六边形的地图格子寻路\n5、寻路算法支持按玩家体积大小进行寻路，有些地方，体积小的角色可寻路通过，体积大的不一定能寻路通过。\n6、支持RVO导航，可以让角色行走时互相避让\n7、寻路导航组件封装得方便易用，开发者可调用外部实现各种条件的寻路\n8、地图系统有完善的地图跳转功能，可借助地图编辑器编辑传送门，下面工具栏有编辑器入口\n9、有于NPC，怪物的交互功能，可借助地图编辑器摆放NPC和怪物\n10、角色封装有方便易用的导航接口和跟踪接口，可轻易实现一大群怪追踪玩家\n11、系统封装有寻路导航和遥感导航，可以根据需求调用接口切换控制方式\n12、系统封装有类似“英雄联盟”一样的小地图导航系统，可根据需求选择\n13、系统封装有自定义鼠标样式，做页游可能会用到，通过接口可以自由切换样式\n",
+            "The front-end framework includes the following contents\n1. The completion process of game login > loading into the lobby > initializing the map, which can be directly changed\n2. Each interface and key place of the code has standardized comments\n3. Efficient map search Pathfinding algorithm supports 3,000 characters finding paths at the same time per frame\n4. The pathfinding algorithm supports square, diamond, and hexagonal map grid pathfinding\n5. The pathfinding algorithm supports pathfinding based on the size of the player. In some places, the volume Small characters can find their way through, but larger ones may not be able to find their way through.\n6. Support rvo navigation, which allows characters to avoid each other when walking\n7. The pathfinding navigation component is encapsulated in a convenient and easy-to-use package, and developers can call it externally. Achieve pathfinding under various conditions\n8. The map system has a complete map jump function. You can use the map editor to edit the portal. The toolbar below has an editor entrance\n9. It has interactive functions for NPCs and monsters. You can use the map editor to edit the portal. The map editor places NPCs and monsters\n10. The characters are encapsulated with convenient and easy-to-use navigation interfaces and tracking interfaces, which can easily enable a large group of monsters to track players\n11. The system is encapsulated with pathfinding navigation and remote sensing navigation, and the interface can be called according to needs Switch control mode\n12. The system is packaged with a mini map navigation system similar to \"League of Legends\", which can be selected according to needs\n13. The system is packaged with a custom mouse style, which may be used in web games. The style can be freely switched through the interface \n",
             28,
             2,
             763,
@@ -26433,7 +26433,7 @@
             [
               [
                 161,
-                "框架还不免费，可以从Cocos商店购买",
+                "The framework is not free yet, you can buy it from the cocos store",
                 24,
                 false,
                 1,
@@ -26479,7 +26479,7 @@
             [
               [
                 162,
-                "\n也可以直接联系作者购买\n联系方式  QQ：583051842",
+                "\nYou can also contact the author directly to purchase\nContact information  QQ：583051842",
                 24,
                 false,
                 1,
@@ -26679,7 +26679,7 @@
             [
               [
                 52,
-                "Test map",
+                "Test Map",
                 1,
                 1,
                 -1405,
@@ -26877,7 +26877,7 @@
             [
               [
                 7,
-                "Hidden waypoint(I)",
+                "Hidden node(I)",
                 20,
                 false,
                 1,
@@ -27207,7 +27207,7 @@
             [
               [
                 3,
-                "Pixel coordinates",
+                "Pixel ",
                 28,
                 2,
                 1,
@@ -27296,7 +27296,7 @@
             [
               [
                 3,
-                "Grid coordinates",
+                "Grid ",
                 28,
                 2,
                 1,
@@ -27385,7 +27385,7 @@
             [
               [
                 3,
-                "world coordinates",
+                "World ",
                 28,
                 2,
                 1,
@@ -34672,7 +34672,7 @@
             [
               [
                 108,
-                "传送门",
+                "Portal",
                 -2
               ]
             ],
@@ -34694,7 +34694,7 @@
             [
               [
                 3,
-                "传送门",
+                "Portal",
                 20,
                 1,
                 1,
@@ -35376,7 +35376,7 @@
             [
               [
                 86,
-                "怪物",
+                "Monster",
                 -2
               ]
             ],
@@ -35578,7 +35578,7 @@
             [
               [
                 108,
-                "传送门",
+                "Portal",
                 -2
               ]
             ],
@@ -35600,7 +35600,7 @@
             [
               [
                 3,
-                "传送门",
+                "Portal",
                 20,
                 1,
                 1,
@@ -35921,7 +35921,7 @@
             [
               [
                 86,
-                "怪物",
+                "Monster",
                 -2
               ]
             ],
@@ -36738,7 +36738,7 @@
             [
               [
                 86,
-                "怪物",
+                "Monster",
                 -2
               ]
             ],
@@ -37180,7 +37180,7 @@
             [
               [
                 108,
-                "传送门",
+                "Portal",
                 -2
               ]
             ],
@@ -37202,7 +37202,7 @@
             [
               [
                 3,
-                "传送门",
+                "Portal",
                 20,
                 1,
                 1,

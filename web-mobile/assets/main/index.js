@@ -55,23 +55,23 @@ window.__require = function t(e, i, o) {
                 if (this._startNode == this._targetNode)
                     return [this._targetNode];
                 if (!this.isPassNode(this._targetNode))
-                    return console.log("\u76ee\u6807\u4e0d\u53ef\u8fbe\u5230\uff1a"),
+                    return console.log("Target is unreachable:"),
                     [];
                 this._startNode.g = 0,
                 this._startNode.resetTree(),
                 this._binaryTreeNode.refleshTag();
                 for (var i = 0; ; ) {
                     if (i > this.maxStep)
-                        return console.log("\u6ca1\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", i),
+                        return console.log("Target not found, calculation steps: ", i),
                         [];
                     if (i++,
                     this.searchRoundNodes(this._currentNode),
                     this._binaryTreeNode.isTreeNull())
-                        return console.log("\u6ca1\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", i),
+                        return console.log("Target not found, calculation steps: ", i),
                         [];
                     if (this._currentNode = this._binaryTreeNode.getMin_F_Node(),
                     this._currentNode == this._targetNode)
-                        return console.log("\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", i),
+                        return console.log("Target found, calculation steps: ", i),
                         this.getPath();
                     this._binaryTreeNode.setRoadNodeInCloseList(this._currentNode)
                 }
@@ -93,17 +93,17 @@ window.__require = function t(e, i, o) {
                 this._binaryTreeNode.refleshTag();
                 for (var o = 0, n = null; ; ) {
                     if (o > i)
-                        return console.log("\u6ca1\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", o),
+                        return console.log("Target not found, calculation steps: ", o),
                         this.seekPath(t, n);
                     if (o++,
                     this.searchRoundNodes(this._currentNode),
                     this._binaryTreeNode.isTreeNull())
-                        return console.log("\u6ca1\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", o),
+                        return console.log("Target not found, calculation steps: ", o),
                         this.seekPath(t, n);
                     if (this._currentNode = this._binaryTreeNode.getMin_F_Node(),
                     null == n ? n = this._currentNode : this._currentNode.h < n.h && (n = this._currentNode),
                     this._currentNode == this._targetNode)
-                        return console.log("\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", o),
+                        return console.log("Target found, calculation steps: ", o),
                         this.getPath();
                     this._binaryTreeNode.setRoadNodeInCloseList(this._currentNode)
                 }
@@ -232,12 +232,12 @@ window.__require = function t(e, i, o) {
                     var a = 0;
                     clearInterval(this.handle),
                     this.handle = setInterval(function() {
-                        return a > r.maxStep ? (console.log("\u6ca1\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", a),
+                        return a > r.maxStep ? (console.log("Target not found, calculation steps: ", a),
                         void clearInterval(r.handle)) : (a++,
                         r.searchRoundNodes(r._currentNode),
-                        r._binaryTreeNode.isTreeNull() ? (console.log("\u6ca1\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", a),
+                        r._binaryTreeNode.isTreeNull() ? (console.log("Target not found, calculation steps: ", a),
                         void clearInterval(r.handle)) : (r._currentNode = r._binaryTreeNode.getMin_F_Node(),
-                        void (r._currentNode == r._targetNode ? (console.log("\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", a),
+                        void (r._currentNode == r._targetNode ? (console.log("Target found, calculation steps: ", a),
                         clearInterval(r.handle),
                         r._openlist = r._binaryTreeNode.getOpenList(),
                         i.apply(o, [r._startNode, r._targetNode, r._currentNode, r._openlist, r._closelist, r.getPath()])) : (r._binaryTreeNode.setRoadNodeInCloseList(r._currentNode),
@@ -484,23 +484,23 @@ window.__require = function t(e, i, o) {
                 if (this._startNode == this._targetNode)
                     return [this._targetNode];
                 if (!this.isPassNode(this._targetNode))
-                    return console.log("\u76ee\u6807\u4e0d\u53ef\u8fbe\u5230\uff1a"),
+                    return console.log("Target is unreachable:"),
                     [];
                 this._startNode.g = 0,
                 this._startNode.resetTree(),
                 this._binaryTreeNode.refleshTag();
                 for (var i = 0; ; ) {
                     if (i > this.maxStep)
-                        return console.log("\u6ca1\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", i),
+                        return console.log("Target not found, calculation steps: ", i),
                         [];
                     if (i++,
                     this.searchRoundNodes(this._currentNode),
                     this._binaryTreeNode.isTreeNull())
-                        return console.log("\u6ca1\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", i),
+                        return console.log("Target not found, calculation steps: ", i),
                         [];
                     if (this._currentNode = this._binaryTreeNode.getMin_F_Node(),
                     this._currentNode == this._targetNode)
-                        return console.log("\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", i),
+                        return console.log("Target found, calculation steps: ", i),
                         this.getPath();
                     this._binaryTreeNode.setRoadNodeInCloseList(this._currentNode)
                 }
@@ -522,17 +522,17 @@ window.__require = function t(e, i, o) {
                 this._binaryTreeNode.refleshTag();
                 for (var o = 0, n = null; ; ) {
                     if (o > i)
-                        return console.log("\u6ca1\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", o),
+                        return console.log("Target not found, calculation steps:", o),
                         this.seekPath(t, n);
                     if (o++,
                     this.searchRoundNodes(this._currentNode),
                     this._binaryTreeNode.isTreeNull())
-                        return console.log("\u6ca1\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", o),
+                        return console.log("Target not found, calculation steps:", o),
                         this.seekPath(t, n);
                     if (this._currentNode = this._binaryTreeNode.getMin_F_Node(),
                     null == n ? n = this._currentNode : this._currentNode.h < n.h && (n = this._currentNode),
                     this._currentNode == this._targetNode)
-                        return console.log("\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", o),
+                        return console.log("Target found, calculation steps:", o),
                         this.getPath();
                     this._binaryTreeNode.setRoadNodeInCloseList(this._currentNode)
                 }
@@ -732,12 +732,12 @@ window.__require = function t(e, i, o) {
                     var a = 0;
                     clearInterval(this.handle),
                     this.handle = setInterval(function() {
-                        return a > r.maxStep ? (console.log("\u6ca1\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", a),
+                        return a > r.maxStep ? (console.log("Target not found, calculation steps: ", a),
                         void clearInterval(r.handle)) : (a++,
                         r.searchRoundNodes(r._currentNode),
-                        r._binaryTreeNode.isTreeNull() ? (console.log("\u6ca1\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", a),
+                        r._binaryTreeNode.isTreeNull() ? (console.log("Target not found, calculation steps: ", a),
                         void clearInterval(r.handle)) : (r._currentNode = r._binaryTreeNode.getMin_F_Node(),
-                        void (r._currentNode == r._targetNode ? (console.log("\u627e\u5230\u76ee\u6807\u8ba1\u7b97\u6b65\u9aa4\u4e3a\uff1a", a),
+                        void (r._currentNode == r._targetNode ? (console.log("Target found, calculation steps: ", a),
                         clearInterval(r.handle),
                         r._openlist = r._binaryTreeNode.getOpenList(),
                         i.apply(o, [r._startNode, r._targetNode, r._currentNode, r._openlist, r._closelist, r.getPath()])) : (r._binaryTreeNode.setRoadNodeInCloseList(r._currentNode),
@@ -3229,7 +3229,7 @@ window.__require = function t(e, i, o) {
             ,
             e.prototype.init = function() {
                 this.transferIcon.spriteFrame = this.transferIconSkin[this.transferType],
-                this.descLabel.string = this.descNames[this.transferType] + ".\u4f20\u9001\u4eec"
+                this.descLabel.string = this.descNames[this.transferType] + ".Teleporters"
             }
             ,
             __decorate([r(cc.Node)], e.prototype, "Bg", void 0),
@@ -3401,12 +3401,12 @@ window.__require = function t(e, i, o) {
             function e() {
                 var e = null !== t && t.apply(this, arguments) || this;
                 return e.detailName = "",
-                e.defaultObjName = "\u540d\u79f0",
+                e.defaultObjName = "Name",
                 e._graphics = null,
                 e._movieClip = null,
                 e._nameLabel = null,
                 e._objId = "0",
-                e._objName = "\u540d\u79f0",
+                e._objName = "Name",
                 e._objType = "0",
                 e._skin = "",
                 e._cx = 0,
@@ -3592,7 +3592,7 @@ window.__require = function t(e, i, o) {
             e.prototype.refeshName = function() {
                 if (null != this.nameLabel) {
                     var t = "";
-                    "" != this.detailName.trim() && (t = "\u3010" + this.detailName + "\u3011"),
+                    "" != this.detailName.trim() && (t = "[" + this.detailName + "]"),
                     "" == this.objId.trim() ? t += "" + this._objName : t += this._objName + "(" + this.objId + ")",
                     this.nameLabel.string = t
                 }
@@ -3657,7 +3657,7 @@ window.__require = function t(e, i, o) {
         function(t) {
             function e() {
                 var e = null !== t && t.apply(this, arguments) || this;
-                return e._objName = "\u602a\u7269",
+                return e._objName = "Monster",
                 e._monsterType = 0,
                 e._isPatrol = !0,
                 e._dialogueId = 0,
@@ -3880,12 +3880,12 @@ window.__require = function t(e, i, o) {
             e.prototype.refeshName = function() {
                 if (null != this.nameLabel) {
                     var t = "";
-                    "" != this.detailName.trim() && (t = "\u3010" + this.detailName + "\u3011"),
-                    this.defaultSpawn ? (t += "\u3010\u9ed8\u8ba4\u3011",
+                    "" != this.detailName.trim() && (t = "[" + this.detailName + "]"),
+                    this.defaultSpawn ? (t += "[Default]",
                     this.setColor("#ffff00"),
                     o.default.instance.testView.node.active || (cc.systemEvent.emit("ChangeDefaultSpawn", this),
                     console.log("!!!!"))) : this.setColor("#ffffff"),
-                    t += ".\u672c\u5730\u56fe\u51fa\u751f\u70b9Id\uff1a" + this._spawnId,
+                    t += ". This map's spawn point Id: " + this._spawnId,
                     this.nameLabel.string = t
                 }
             }
@@ -3969,9 +3969,9 @@ window.__require = function t(e, i, o) {
             e.prototype.refeshName = function() {
                 if (null != this.nameLabel) {
                     var t = "";
-                    "" != this.detailName.trim() && (t = "\u3010" + this.detailName + "\u3011"),
+                    "" != this.detailName.trim() && (t = "[" + this.detailName + "]"),
                     t += "" + this._objName,
-                    t += ".\u76ee\u6807\u5730\u56fe(" + this._targetMapId + ").\u76ee\u6807\u51fa\u751f\u70b9(" + this._targetMapSpawnId + ")",
+                    t += ".Target map(" + this._targetMapId + ").Target spawn point(" + this._targetMapSpawnId + ")",
                     this.nameLabel.string = t
                 }
             }
@@ -5115,7 +5115,7 @@ window.__require = function t(e, i, o) {
                 }, {
                     label: "Commands",
                     children: [{
-                        label: "Run Test (ctrl + enter)",
+                        label: "Run Test (Ctrl + Enter)",
                         data: 1,
                         fun: o.default.instance.testProject,
                         target: o.default.instance
@@ -5314,7 +5314,7 @@ window.__require = function t(e, i, o) {
         i.RoadSetData = void 0;
         var o = t("./MapType");
         i.default = function() {
-            this.name = "\u672a\u547d\u540d",
+            this.name = "Unnamed",
             this.bgName = "map_bg",
             this.type = o.MapType.angle45,
             this.mapWidth = 0,
@@ -5558,7 +5558,7 @@ window.__require = function t(e, i, o) {
             }
             ,
             e.prototype.saveAsFile = function() {
-                cc.log("\u53e6\u5b58\u4e3a")
+                cc.log("Save As")
             }
             ,
             e.prototype.downloadSource = function() {
@@ -6413,7 +6413,7 @@ window.__require = function t(e, i, o) {
                 configurable: !0
             }),
             t.prototype.toString = function() {
-                return this._attribute + " \u4fee\u6539\u7684\u5c5e\u6027\uff1a\uff08" + this.attribute + "),  \u4fee\u6539\u7684\u503c\u4e3a\uff1a\uff08" + this._value + ")"
+                return this._attribute + " Modified attribute: (" + this.attribute + "), Modified value: (" + this._value + ")"
             }
             ,
             t
@@ -6730,13 +6730,13 @@ window.__require = function t(e, i, o) {
                 }, {
                     label: "Commands",
                     children: [{
-                        label: "Run Test (ctrl + enter)",
+                        label: "Run Test (Ctrl + Enter)",
                         data: 1
                     }, {
-                        label: "Export Map Slices (ctrl + W)",
+                        label: "Export Map Slices (Ctrl + W)",
                         data: 2
                     }, {
-                        label: "Export Reduced Map (ctrl + T)",
+                        label: "Export Reduced Map (Ctrl + T)",
                         data: 3
                     }]
                 }, {
@@ -7187,8 +7187,7 @@ window.__require = function t(e, i, o) {
                         }
                         if (c * h > t.maxCeilCountLimit)
                             cc.sys.isBrowser && setTimeout(function() {
-                                alert("\u8def\u70b9\u683c\u5b50\u6570\u4e0d\u80fd\u8d85\u8fc7" + t.maxCeilCountLimit + ",\u521b\u5efa\u5931\u8d25\uff0c\u8bf7\u91cd\u65b0\u8c03\u6574\u8def\u70b9\u683c\u5b50\u5927\u5c0f")
-                            }, 100);
+                                alert("The number of road point grids cannot exceed " + t.maxCeilCountLimit + ", creation failed. Please readjust the size of the road point grids")                            }, 100);
                         else {
                             var d = new o.default;
                             d.name = t.mapNameTxt.string,
@@ -7204,7 +7203,7 @@ window.__require = function t(e, i, o) {
                         }
                     } else
                         cc.sys.isBrowser && setTimeout(function() {
-                            alert("\u8fd8\u6ca1\u9009\u62e9\u5e95\u56fe")
+                            alert("Background image not selected yet")
                         }, 100)
                 }, this),
                 this.cancleBtn.node.on(cc.Node.EventType.TOUCH_START, function() {
@@ -7345,9 +7344,9 @@ window.__require = function t(e, i, o) {
                     t._mapData ? t.bgTex ? (t._mapData.bgName = t.bgName,
                     o.default.instance.openMap(t._mapData, t.bgTex),
                     t.close()) : cc.sys.isBrowser && setTimeout(function() {
-                        alert("\u8fd8\u6ca1\u9009\u62e9\u5e95\u56fe")
+                        alert("Background image not selected yet")
                     }, 100) : cc.sys.isBrowser && setTimeout(function() {
-                        alert("\u8fd8\u6ca1\u9009\u62e9\u5e95\u56fe\u5730\u56fe\u6570\u636e")
+                        alert("Map data for the background image not selected yet")
                     }, 100)
                 }, this),
                 this.cancleBtn.node.on(cc.Node.EventType.TOUCH_START, function() {
@@ -7668,7 +7667,7 @@ window.__require = function t(e, i, o) {
                     return this.propertyNameTxl.string = "",
                     this.currentObj = null,
                     void this.clear();
-                t instanceof r.default ? this.propertyNameTxl.string = "NPC" : t instanceof n.default ? this.propertyNameTxl.string = "\u602a\u7269" : t instanceof s.default ? this.propertyNameTxl.string = "\u4f20\u9001\u95e8" : t instanceof a.default ? this.propertyNameTxl.string = "\u51fa\u751f\u70b9" : this.propertyNameTxl.string = "";
+                t instanceof r.default ? this.propertyNameTxl.string = "NPC" : t instanceof n.default ? this.propertyNameTxl.string = "Monster" : t instanceof s.default ? this.propertyNameTxl.string = "Transfer Gate" : t instanceof a.default ? this.propertyNameTxl.string = "Spawn Point" : this.propertyNameTxl.string = "";
                 var e = c.default.instance.getWorldPointByPixel(t.node.x, t.node.y);
                 if (t.cx = e.x,
                 t.cy = e.y,
@@ -7983,7 +7982,7 @@ window.__require = function t(e, i, o) {
             }
             ,
             t.prototype.toString = function() {
-                return "\u8def\u70b9\u50cf\u7d20\u5750\u6807\uff1a\uff08" + this._px + "," + this._py + "),  \u8def\u70b9\u4e16\u754c\u5750\u6807\uff1a\uff08" + this._cx + "," + this._cy + "),  \u8def\u70b9\u5e73\u9762\u76f4\u89d2\u5750\u6807\uff1a\uff08" + this._dx + "," + this._dy + ")"
+                return "Road point pixel coordinates: (" + this._px + "," + this._py + "),  Road point world coordinates: (" + this._cx + "," + this._cy + "),  Road point plane rectangular coordinates: (" + this._dx + "," + this._dy + ")"                
             }
             ,
             Object.defineProperty(t.prototype, "px", {
@@ -8543,14 +8542,14 @@ window.__require = function t(e, i, o) {
                 1: {
                     testUrl: "https://easymapeditor-1258223435.cos.ap-guangzhou.myqcloud.com/frameworkdemo/demo4/web-desktop/index.html",
                     buyUrl: "https://store.cocos.com/app/detail/4391",
-                    title: "\u6846\u67b6\u4ecb\u7ecd",
-                    desc: "\u6846\u67b6\u7248\u672ccreator2.4.8,\u542b\u4ee5\u4e0b\u5185\u5bb9\n1\u3001\u6e38\u620f\u767b\u5f55->\u52a0\u8f7d\u8fdb\u5927\u5385->\u521d\u59cb\u5316\u5730\u56fe\u7684\u5b8c\u6210\u6d41\u7a0b\uff0c\u53ef\u76f4\u63a5\u6362\u76ae\n2\u3001\u6846\u67b6\u4ee3\u7801\u6bcf\u4e2a\u63a5\u53e3\u548c\u5173\u952e\u7684\u5730\u65b9\u90fd\u6709\u89c4\u8303\u7684\u6ce8\u91ca\n3\u3001\u9ad8\u6548\u7684\u5730\u56fe\u5bfb\u8def\u7b97\u6cd5\uff0c\u6bcf\u5e27\u652f\u63013000\u4e2a\u89d2\u8272\u540c\u65f6\u5bfb\u8def\n4\u3001\u5bfb\u8def\u7b97\u6cd5\u652f\u6301\u6b63\u65b9\u5f62\uff0c\u83f1\u5f62\uff0c\u516d\u8fb9\u5f62\u7684\u5730\u56fe\u683c\u5b50\u5bfb\u8def\n5\u3001\u5bfb\u8def\u7b97\u6cd5\u652f\u6301\u6309\u73a9\u5bb6\u4f53\u79ef\u5927\u5c0f\u8fdb\u884c\u5bfb\u8def\uff0c\u6709\u4e9b\u5730\u65b9\uff0c\u4f53\u79ef\u5c0f\u7684\u89d2\u8272\u53ef\u5bfb\u8def\u901a\u8fc7\uff0c\u4f53\u79ef\u5927\u7684\u4e0d\u4e00\u5b9a\u80fd\u5bfb\u8def\u901a\u8fc7\u3002\n6\u3001\u652f\u6301RVO\u5bfc\u822a\uff0c\u53ef\u4ee5\u8ba9\u89d2\u8272\u884c\u8d70\u65f6\u4e92\u76f8\u907f\u8ba9\n7\u3001\u5bfb\u8def\u5bfc\u822a\u7ec4\u4ef6\u5c01\u88c5\u5f97\u65b9\u4fbf\u6613\u7528\uff0c\u5f00\u53d1\u8005\u53ef\u8c03\u7528\u5916\u90e8\u5b9e\u73b0\u5404\u79cd\u6761\u4ef6\u7684\u5bfb\u8def\n8\u3001\u5730\u56fe\u7cfb\u7edf\u6709\u5b8c\u5584\u7684\u5730\u56fe\u8df3\u8f6c\u529f\u80fd\uff0c\u53ef\u501f\u52a9\u5730\u56fe\u7f16\u8f91\u5668\u7f16\u8f91\u4f20\u9001\u95e8\uff0c\u4e0b\u9762\u5de5\u5177\u680f\u6709\u7f16\u8f91\u5668\u5165\u53e3\n9\u3001\u6709\u4e0eNPC\uff0c\u602a\u7269\u7684\u4ea4\u4e92\u529f\u80fd\u63a5\u53e3\uff0c\u5f00\u53d1\u8005\u53ef\u4ee5\u5728\u63a5\u53e3\u4e0a\u5b9e\u73b0\u81ea\u5df1\u7684\u529f\u80fd\n10\u3001\u89d2\u8272\u5c01\u88c5\u6709\u65b9\u4fbf\u6613\u7528\u7684\u5bfc\u822a\u63a5\u53e3\u548c\u8ddf\u8e2a\u63a5\u53e3\uff0c\u53ef\u8f7b\u6613\u5b9e\u73b0\u4e00\u5927\u7fa4\u602a\u8ffd\u8e2a\u73a9\u5bb6\n11\u3001\u7cfb\u7edf\u5c01\u88c5\u6709\u5bfb\u8def\u5bfc\u822a\u548c\u9065\u611f\u5bfc\u822a\uff0c\u53ef\u4ee5\u6839\u636e\u9700\u6c42\u8c03\u7528\u63a5\u53e3\u5207\u6362\u63a7\u5236\u65b9\u5f0f\n12\u3001\u7cfb\u7edf\u5c01\u88c5\u6709\u7c7b\u4f3c\u201c\u82f1\u96c4\u8054\u76df\u201d\u4e00\u6837\u7684\u5c0f\u5730\u56fe\u5bfc\u822a\u7cfb\u7edf\uff0c\u53ef\u6839\u636e\u9700\u6c42\u9009\u62e9\n13\u3001\u7cfb\u7edf\u5c01\u88c5\u6709\u81ea\u5b9a\u4e49\u9f20\u6807\u6837\u5f0f\uff0c\u505a\u9875\u6e38\u53ef\u80fd\u4f1a\u7528\u5230\uff0c\u901a\u8fc7\u63a5\u53e3\u53ef\u4ee5\u81ea\u7531\u5207\u6362\u6837\u5f0f\n14\u3001\u7cfb\u7edf\u5c01\u88c5\u6709\u663e\u793a\u5730\u56fe\u7f16\u8f91\u8def\u5f84\u7684\u63a5\u53e3\uff0c\u65b9\u4fbf\u8c03\u8bd5\u4f7f\u7528\n15\u3001\u7cfb\u7edf\u5c01\u88c5\u4e86\u573a\u666f\u7ba1\u7406\u7cfb\u7edf\uff0c\u5b9e\u73b0\u5730\u56fe\u7684\u81ea\u7531\u5207\u6362\n16\u3001\u7cfb\u7edf\u5c01\u88c5\u4e86\u58f0\u97f3\u7ba1\u7406\u7cfb\u7edf\uff0c\u5b9e\u73b0\u5207\u6362\u4e0d\u540c\u7684\u5730\u56fe\u64ad\u653e\u4e0d\u540c\u7684bgm\n            "
+                    title: "Framework Introduction",
+                    desc: "Framework version creator2.4.8, includes the following content:\n1. Game login -> Load into lobby -> Initialize map completion process, can directly change skin\n2. Framework code has standardized comments for each interface and key areas\n3. Efficient map pathfinding algorithm, supports 3000 characters pathfinding simultaneously per frame\n4. Pathfinding algorithm supports square, diamond, and hexagonal map grid pathfinding\n5. Pathfinding algorithm supports pathfinding based on player volume size, in some places, small volume characters can pathfind through, large volume ones may not always pathfind through.\n6. Supports RVO navigation, allowing characters to avoid each other while walking\n7. Pathfinding navigation components are encapsulated for ease of use, developers can call external implementations for various pathfinding conditions\n8. Map system has complete map jump functionality, can edit teleport gates with map editor, editor entrance in toolbar below\n9. Has interaction function interfaces with NPCs and monsters, developers can implement their own functions on the interface\n10. Character encapsulation has convenient navigation and tracking interfaces, easily implement a large group of monsters chasing players\n11. System encapsulates pathfinding navigation and remote sensing navigation, can switch control methods according to needs by calling interfaces\n12. System encapsulates a mini-map navigation system similar to 'League of Legends', can be selected according to needs\n13. System encapsulates custom mouse styles, might be used for page games, can freely switch styles through interfaces\n14. System encapsulates interfaces for displaying map editing paths, convenient for debugging use\n15. System encapsulates scene management system, realizing free switching of maps\n16. System encapsulates sound management system, realizing playing different bgm when switching different maps\n            "
                 },
                 2: {
                     testUrl: "https://easymapeditor-1258223435.cos.ap-guangzhou.myqcloud.com/frameworkdemo/demo3/web-desktop/index.html",
                     buyUrl: "https://store.cocos.com/app/detail/4391",
-                    title: "\u6846\u67b6\u4ecb\u7ecd",
-                    desc: "\u6846\u67b6\u7248\u672ccreator3.5.0,\u542b\u4ee5\u4e0b\u5185\u5bb9\n1\u3001\u6e38\u620f\u767b\u5f55->\u52a0\u8f7d\u8fdb\u5927\u5385->\u521d\u59cb\u5316\u5730\u56fe\u7684\u5b8c\u6210\u6d41\u7a0b\uff0c\u53ef\u76f4\u63a5\u6362\u76ae\n2\u3001\u6846\u67b6\u4ee3\u7801\u6bcf\u4e2a\u63a5\u53e3\u548c\u5173\u952e\u7684\u5730\u65b9\u90fd\u6709\u89c4\u8303\u7684\u6ce8\u91ca\n3\u3001\u9ad8\u6548\u7684\u5730\u56fe\u5bfb\u8def\u7b97\u6cd5\uff0c\u6bcf\u5e27\u652f\u63013000\u4e2a\u89d2\u8272\u540c\u65f6\u5bfb\u8def\n4\u3001\u5bfb\u8def\u7b97\u6cd5\u652f\u6301\u6b63\u65b9\u5f62\uff0c\u83f1\u5f62\uff0c\u516d\u8fb9\u5f62\u7684\u5730\u56fe\u683c\u5b50\u5bfb\u8def\n5\u3001\u5bfb\u8def\u7b97\u6cd5\u652f\u6301\u6309\u73a9\u5bb6\u4f53\u79ef\u5927\u5c0f\u8fdb\u884c\u5bfb\u8def\uff0c\u6709\u4e9b\u5730\u65b9\uff0c\u4f53\u79ef\u5c0f\u7684\u89d2\u8272\u53ef\u5bfb\u8def\u901a\u8fc7\uff0c\u4f53\u79ef\u5927\u7684\u4e0d\u4e00\u5b9a\u80fd\u5bfb\u8def\u901a\u8fc7\u3002\n6\u3001\u652f\u6301RVO\u5bfc\u822a\uff0c\u53ef\u4ee5\u8ba9\u89d2\u8272\u884c\u8d70\u65f6\u4e92\u76f8\u907f\u8ba9\n7\u3001\u5bfb\u8def\u5bfc\u822a\u7ec4\u4ef6\u5c01\u88c5\u5f97\u65b9\u4fbf\u6613\u7528\uff0c\u5f00\u53d1\u8005\u53ef\u8c03\u7528\u5916\u90e8\u5b9e\u73b0\u5404\u79cd\u6761\u4ef6\u7684\u5bfb\u8def\n8\u3001\u5730\u56fe\u7cfb\u7edf\u6709\u5b8c\u5584\u7684\u5730\u56fe\u8df3\u8f6c\u529f\u80fd\uff0c\u53ef\u501f\u52a9\u5730\u56fe\u7f16\u8f91\u5668\u7f16\u8f91\u4f20\u9001\u95e8\uff0c\u4e0b\u9762\u5de5\u5177\u680f\u6709\u7f16\u8f91\u5668\u5165\u53e3\n9\u3001\u6709\u4e0eNPC\uff0c\u602a\u7269\u7684\u4ea4\u4e92\u529f\u80fd\u63a5\u53e3\uff0c\u5f00\u53d1\u8005\u53ef\u4ee5\u5728\u63a5\u53e3\u4e0a\u5b9e\u73b0\u81ea\u5df1\u7684\u529f\u80fd\n10\u3001\u89d2\u8272\u5c01\u88c5\u6709\u65b9\u4fbf\u6613\u7528\u7684\u5bfc\u822a\u63a5\u53e3\u548c\u8ddf\u8e2a\u63a5\u53e3\uff0c\u53ef\u8f7b\u6613\u5b9e\u73b0\u4e00\u5927\u7fa4\u602a\u8ffd\u8e2a\u73a9\u5bb6\n11\u3001\u7cfb\u7edf\u5c01\u88c5\u6709\u5bfb\u8def\u5bfc\u822a\u548c\u9065\u611f\u5bfc\u822a\uff0c\u53ef\u4ee5\u6839\u636e\u9700\u6c42\u8c03\u7528\u63a5\u53e3\u5207\u6362\u63a7\u5236\u65b9\u5f0f\n12\u3001\u7cfb\u7edf\u5c01\u88c5\u6709\u7c7b\u4f3c\u201c\u82f1\u96c4\u8054\u76df\u201d\u4e00\u6837\u7684\u5c0f\u5730\u56fe\u5bfc\u822a\u7cfb\u7edf\uff0c\u53ef\u6839\u636e\u9700\u6c42\u9009\u62e9\n13\u3001\u7cfb\u7edf\u5c01\u88c5\u6709\u81ea\u5b9a\u4e49\u9f20\u6807\u6837\u5f0f\uff0c\u505a\u9875\u6e38\u53ef\u80fd\u4f1a\u7528\u5230\uff0c\u901a\u8fc7\u63a5\u53e3\u53ef\u4ee5\u81ea\u7531\u5207\u6362\u6837\u5f0f\n14\u3001\u7cfb\u7edf\u5c01\u88c5\u6709\u663e\u793a\u5730\u56fe\u7f16\u8f91\u8def\u5f84\u7684\u63a5\u53e3\uff0c\u65b9\u4fbf\u8c03\u8bd5\u4f7f\u7528\n15\u3001\u7cfb\u7edf\u5c01\u88c5\u4e86\u573a\u666f\u7ba1\u7406\u7cfb\u7edf\uff0c\u5b9e\u73b0\u5730\u56fe\u7684\u81ea\u7531\u5207\u6362\n16\u3001\u7cfb\u7edf\u5c01\u88c5\u4e86\u58f0\u97f3\u7ba1\u7406\u7cfb\u7edf\uff0c\u5b9e\u73b0\u5207\u6362\u4e0d\u540c\u7684\u5730\u56fe\u64ad\u653e\u4e0d\u540c\u7684bgm\n            "
+                    title: "Framework Introduction",
+                    desc: "Framework version creator3.5.0, includes the following content:\n1. Game login -> Load into lobby -> Initialize map completion process, can directly change skin\n2. Framework code has standardized comments for each interface and key areas\n3. Efficient map pathfinding algorithm, supports 3000 characters pathfinding simultaneously per frame\n4. Pathfinding algorithm supports square, diamond, and hexagonal map grid pathfinding\n5. Pathfinding algorithm supports pathfinding based on player volume size, in some places, small volume characters can pathfind through, large volume ones may not always pathfind through.\n6. Supports RVO navigation, allowing characters to avoid each other while walking\n7. Pathfinding navigation components are encapsulated for ease of use, developers can call external implementations for various pathfinding conditions\n8. Map system has complete map jump functionality, can edit teleport gates with map editor, editor entrance in toolbar below\n9. Has interaction function interfaces with NPCs and monsters, developers can implement their own functions on the interface\n10. Character encapsulation has convenient navigation and tracking interfaces, easily implement a large group of monsters chasing players\n11. System encapsulates pathfinding navigation and remote sensing navigation, can switch control methods according to needs by calling interfaces\n12. System encapsulates a mini-map navigation system similar to 'League of Legends', can be selected according to needs\n13. System encapsulates custom mouse styles, might be used for page games, can freely switch styles through interfaces\n14. System encapsulates interfaces for displaying map editing paths, convenient for debugging use\n15. System encapsulates scene management system, realizing free switching of maps\n16. System encapsulates sound management system, realizing playing different bgm when switching different maps\n            "
                 }
             },
             e
@@ -9412,13 +9411,14 @@ window.__require = function t(e, i, o) {
             ,
             e.prototype.sceneScrollByPlayer = function() {
                 this.sceneMap.isFollowPlayer = !this.sceneMap.isFollowPlayer,
-                this.followBtn.getComponentInChildren(cc.Label).string = this.sceneMap.isFollowPlayer ? "Screen Not Following Player (F3)" : "Screen Following Player (F3)"
+                this.followBtn.getComponentInChildren(cc.Label).string = this.sceneMap.isFollowPlayer ? "Screen Not Auto Follow (F3)" : "Screen Auto Follow (F3)"
             }
             ,
             e.prototype.lookSeekRoad = function() {
                 this.sceneMap.stopTestSeekRoad(),
                 this.sceneMap.isLookSeekRoad = !this.sceneMap.isLookSeekRoad,
-                this.lookSeekBtn.getComponentInChildren(cc.Label).string = this.sceneMap.isLookSeekRoad ? "Normal Pathfinding (F4)" : "View Pathfinding Process (F4)",                !this.sceneMap.isLookSeekRoad && this.sceneMap.testSeekPathGraphic.clear()
+                this.lookSeekBtn.getComponentInChildren(cc.Label).string = this.sceneMap.isLookSeekRoad ? "Normal Pathfinding (F4)" : "Debug Pathfinding (F4)",
+                                !this.sceneMap.isLookSeekRoad && this.sceneMap.testSeekPathGraphic.clear()
             }
             ,
             e.prototype.open = function() {
@@ -9519,7 +9519,7 @@ window.__require = function t(e, i, o) {
                 var t, e = this;
                 console.log("XMLHttpRequest", XMLHttpRequest);
                 var i = new window.XMLHttpRequest;
-                i.open("GET", "<root><AlleyWay><Code>1103</Code><Name>\u80e1\u540c2</Name></AlleyWay><AlleyWay><Code>1105</Code><Name>\u80e1\u540c2</Name></AlleyWay></root>", !1),
+                i.open("GET", "<root><AlleyWay><Code>1103</Code><Name>Hutong 2</Name></AlleyWay><AlleyWay><Code>1105</Code><Name>Hutong 2</Name></AlleyWay></root>", !1),
                 t = i.responseXML,
                 console.log("xmlDoc", t);
                 var o = this.addComponent(cc.Graphics);
