@@ -1,5 +1,5 @@
 # OnlineMapEditor
-
+This is English version of OnlineMapEditor
 ## Description
 OnlineMapEditor is a web-based tool designed to allow users to create and edit maps online. It provides a user-friendly interface for adding, modifying, and deleting map elements.
 
@@ -14,7 +14,7 @@ To install and run the OnlineMapEditor, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/OnlineMapEditor.git
+   git clone https://github.com/b1nhm1nh/OnlineMapEditor.git
    ```
 2. Navigate to the project directory:
    ```sh
@@ -22,21 +22,19 @@ To install and run the OnlineMapEditor, follow these steps:
    ```
 3. Install the required dependencies:
    ```sh
-   npm install
+   pip install -r requirements.txt
    ```
 4. Start the application:
    ```sh
-   npm start
+   python server.py
    ```
 
 ## Usage
-Once the application is running, open your web browser and navigate to `http://localhost:3000` to start using the OnlineMapEditor. You can create new maps, edit existing ones, and save your changes directly to the server.
+Once the application is running, open your web browser and navigate to `http://127.0.0.1:8000/index.html` to start using the OnlineMapEditor. You can create new maps, edit existing ones, and save your changes directly to the server.
 
 ## Dependencies
-- Node.js
-- npm
-- React
-- Leaflet
+- Python
+- Flask
 
 ## Contributing
 Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) to get started.
